@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>LoliPickaxe Control Center</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora aurora-a"></div>
+  <div class="aurora aurora-b"></div>
+  <div class="noise"></div>
+
+  <div id="uiViewport" class="ui-viewport">
+  <div class="app-shell">
+    <aside class="sidebar glass">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <div>
+          <div class="brand-name">LOLI PICKAXE</div>
+          <div class="brand-sub">CONTROL CENTER</div>
+        </div>
+      </div>
+
+      <div class="side-label">配置视图</div>
+      <nav id="categoryNav" class="category-nav"></nav>
+
+      <div class="sidebar-bottom">
+        <div class="runtime-card">
+          <div class="runtime-dot"></div>
+          <div>
+            <strong>Chromium WebUI</strong>
+            <span>Local · MCEF</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar glass">
+        <div class="title-area">
+          <div class="eyebrow">N KEY CONFIGURATION</div>
+          <h1>功能控制台</h1>
+          <p>直接在游戏内运行的 HTML / CSS / JavaScript 界面</p>
+        </div>
+
+        <div class="top-actions">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.1-5.4a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+            <input id="searchInput" type="search" placeholder="搜索功能或配置键…" autocomplete="off" />
+          </label>
+          <button id="closeButton" class="icon-button" type="button" title="关闭">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+          </button>
+        </div>
+      </header>
+
+      <section class="content glass">
+        <div class="content-head">
+          <div>
+            <div class="section-kicker">ALL MODULES</div>
+            <h2 id="viewTitle">全部功能</h2>
+          </div>
+          <div class="stats">
+            <div class="stat"><span id="visibleCount">0</span><small>当前显示</small></div>
+            <div class="stat"><span id="enabledCount">0</span><small>已启用</small></div>
+          </div>
+        </div>
+
+        <div id="configGrid" class="config-grid" aria-live="polite">
+          <div class="loading-card">
+            <div class="loading-orbit"></div>
+            <div>
+              <strong>正在连接配置数据</strong>
+              <span>Chromium 已启动，等待游戏侧状态…</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="actionbar glass">
+        <div class="change-state">
+          <span id="changeDot" class="change-dot"></span>
+          <span id="changeText">配置已同步</span>
+        </div>
+        <div class="footer-actions">
+          <button id="resetButton" class="button secondary" type="button">恢复默认</button>
+          <button id="saveButton" class="button primary" type="button">
+            <span>保存并应用</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

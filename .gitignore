@@ -1,0 +1,32 @@
+# Gradle and generated builds
+.gradle/
+build/
+run/
+run-gametest/
+run-gametest-*/
+run-ui-smoke-test/
+run-data/
+mcmodsrepo/
+
+# IDE/editor state
+.idea/
+.vscode/
+out/
+bin/
+eclipse/
+.settings/
+.metadata/
+.classpath
+.project
+*.iml
+*.ipr
+*.iws
+*.launch
+
+# Local archives, logs, caches and operating-system files
+*.zip
+*.log
+hs_err_pid*
+replay_pid*
+.DS_Store
+Thumbs.db

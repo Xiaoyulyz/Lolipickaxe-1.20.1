@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "first_tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "lolipickaxe:loli_altar",
+      "lolipickaxe:loli_auto_furnace_addon",
+      "lolipickaxe:loli_blue_screen_tnt",
+      "lolipickaxe:loli_card_online",
+      "lolipickaxe:loli_coal_addon",
+      "lolipickaxe:loli_diamond_addon",
+      "lolipickaxe:loli_emerald_addon",
+      "lolipickaxe:loli_exit_tnt",
+      "lolipickaxe:loli_fail_respond_tnt",
+      "lolipickaxe:loli_fly_addon",
+      "lolipickaxe:loli_glow_addon",
+      "lolipickaxe:loli_gold_addon",
+      "lolipickaxe:loli_iron_addon",
+      "lolipickaxe:loli_lapis_addon",
+      "lolipickaxe:loli_nether_star_addon",
+      "lolipickaxe:loli_obsidian_addon",
+      "lolipickaxe:loli_pickaxe",
+      "lolipickaxe:loli_quartz_addon",
+      "lolipickaxe:loli_redstone_addon",
+      "lolipickaxe:loli_superposition",
+      "lolipickaxe:password_work_bench",
+      "lolipickaxe:small_loli_pickaxe",
+      "lolipickaxe:small_loli_pickaxe_up"
+    ]
+  }
+}
